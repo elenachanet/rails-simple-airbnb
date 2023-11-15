@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="mt-4 mb-4"><%= @flat.name %></h1>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><%= @flat.name %></h5>
+      <p class="card-text"><strong>Address:</strong> <%= @flat.address %></p>
+      <p class="card-text"><strong>Description:</strong> <%= @flat.description %></p>
+      <p class="card-text"><strong>Price per Night:</strong> $<%= @flat.price_per_night %></p>
+      <p class="card-text"><strong>Number of Guests:</strong> <%= @flat.number_of_guests %></p>
+    </div>
+  </div>
+
+  <%= link_to 'Back to List', flats_path, class: 'btn btn-secondary mt-4' %>
+</div>
